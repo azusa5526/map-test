@@ -3,7 +3,8 @@
 		<v-row class="text-center">
 			<GmapMap :center="center" :zoom="11" style="width: 100%; height: calc(100vh - 64px)" ref="gmap"> </GmapMap>
 		</v-row>
-		<div style="position: fixed; top: 78px; right: 14px; z-index: 1500">
+		<div style="position: fixed; top: 78px; right: 14px; z-index: 1500" class="secondary px-3 py-2">
+			<span class="white--text mr-2">In HelloWorld</span>
 			<v-btn @click="setCursor('crosshair', $refs.gmap.$mapObject)" class="mr-2">crosshair</v-btn>
 			<v-btn @click="setCursor('grab', $refs.gmap.$mapObject)">grab</v-btn>
 		</div>
